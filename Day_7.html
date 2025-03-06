@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text and shadow properties</title>
+    <link rel="icon" href="data:image/png;base64,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">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Danfo&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Danfo&family=Great+Vibes&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Danfo&family=Great+Vibes&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Playball&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Danfo&family=Great+Vibes&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Oswald:wght@200..700&family=Playball&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Danfo&family=Great+Vibes&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Oswald:wght@200..700&family=Playball&family=Rowdies:wght@300;400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Danfo&family=Great+Vibes&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Oswald:wght@200..700&family=Pacifico&family=Playball&family=Rowdies:wght@300;400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Danfo&family=Great+Vibes&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Micro+5&family=Oswald:wght@200..700&family=Pacifico&family=Playball&family=Rowdies:wght@300;400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Danfo&family=Great+Vibes&family=Jacquard+24&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Micro+5&family=Oswald:wght@200..700&family=Pacifico&family=Playball&family=Rowdies:wght@300;400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Danfo&family=Great+Vibes&family=Jacquard+24&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Micro+5&family=Oswald:wght@200..700&family=Pacifico&family=Playball&family=Rowdies:wght@300;400;700&family=Shadows+Into+Light&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Danfo&family=Great+Vibes&family=Jacquard+24&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Micro+5&family=Oswald:wght@200..700&family=Pacifico&family=Playball&family=Rowdies:wght@300;400;700&family=Shadows+Into+Light&family=Tiny5&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Danfo&family=Great+Vibes&family=Jacquard+24&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Micro+5&family=Oswald:wght@200..700&family=Pacifico&family=Permanent+Marker&family=Playball&family=Rowdies:wght@300;400;700&family=Shadows+Into+Light&family=Tiny5&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Danfo&family=Great+Vibes&family=Jacquard+24&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Micro+5&family=Oswald:wght@200..700&family=Pacifico&family=Permanent+Marker&family=Playball&family=Rowdies:wght@300;400;700&family=Shadows+Into+Light&family=Tiny5&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Text:ital@0;1&family=Danfo&family=Great+Vibes&family=Jacquard+24&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Micro+5&family=Oswald:wght@200..700&family=Pacifico&family=Permanent+Marker&family=Playball&family=Rowdies:wght@300;400;700&family=Shadows+Into+Light&family=Tiny5&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Text:ital@0;1&family=Danfo&family=Great+Vibes&family=Jacquard+24&family=Jersey+10+Charted&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Micro+5&family=Oswald:wght@200..700&family=Pacifico&family=Permanent+Marker&family=Playball&family=Rowdies:wght@300;400;700&family=Shadows+Into+Light&family=Tiny5&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Text:ital@0;1&family=Danfo&family=Great+Vibes&family=Italiana&family=Jacquard+24&family=Jersey+10+Charted&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Micro+5&family=Oswald:wght@200..700&family=Pacifico&family=Permanent+Marker&family=Playball&family=Rowdies:wght@300;400;700&family=Shadows+Into+Light&family=Tiny5&display=swap');
+        </style>
+    <style>
+
+        body{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .heading{
+            border: 1px solid black;
+            box-shadow: 5px 5px 15px 5px red inset, 1px 1px 5px 5px black;
+            width: 70%;
+            height: 5vh;
+            text-align: center;
+            padding: 1rem;
+            margin: auto;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+        }
+
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem;
+            
+        }
+
+        .box1{
+            border: 1px solid black;
+            width: 15%;
+            height: 10rem;
+            background-color: rgb(203, 195, 227);
+            border-radius: 5px;
+            text-align: center;
+            padding: 1rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 2rem;
+            margin: auto;
+        }
+
+        .box1:hover{
+
+            font-family: "oswald", sans-serif;
+            font-size: 2rem;
+            box-shadow: 5px 5px 5px 5px gray;
+            transition: 1s;
+        }
+
+
+        .box2{
+            border: 1px solid black;
+            width: 15%;
+            height: 10rem;
+            background-color: rgb(255, 255, 221);
+            border-radius: 5px;
+            text-align: center;
+            padding: 1rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 2rem;
+            margin: auto;
+        }
+
+        .box2:hover{
+
+            font-family: "kanit", sans-serif;
+            font-size: 2rem;
+            box-shadow: 5px 5px 5px 5px gray;
+            transition: 1s;
+        }
+
+
+        .box3{
+            border: 1px solid black;
+            width: 15%;
+            height: 10rem;
+            background-color: rgb(251, 191, 119);
+            border-radius: 5px;
+            text-align: center;
+            padding: 1rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 2rem;
+            margin: auto;
+        }
+
+        .box3:hover{
+
+            font-family: "josefin slab", sans-serif;
+            font-size: 2rem;
+            box-shadow: 5px 5px 5px 5px gray;
+            transition: 1s;
+        }
+
+
+
+        .box4{
+            border: 1px solid black;
+            width: 15%;
+            height: 10rem;
+            background-color: lightblue;
+            border-radius: 5px;
+            text-align: center;
+            padding: 1rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 2rem;
+            margin: auto;
+        }
+
+        .box4:hover{
+
+            font-family: "danfo", sans-serif;
+            font-size: 2rem;
+            box-shadow: 5px 5px 5px 5px gray;
+            transition: 1s;
+        }
+
+        .box5{
+            border: 1px solid black;
+            width: 15%;
+            height: 10rem;
+            background-color: rgb(251, 191, 119);
+            border-radius: 5px;
+            text-align: center;
+            padding: 1rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 2rem;
+            margin: auto;
+        }
+
+        .box5:hover{
+
+            font-family: "great vibes", sans-serif;
+            font-size: 2rem;
+            box-shadow: 5px 5px 5px 5px gray;
+            transition: 1s;
+        }
+
+        .box6{
+            border: 1px solid black;
+            width: 15%;
+            height: 10rem;
+            background-color: lightcoral;
+            border-radius: 5px;
+            text-align: center;
+            padding: 1rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 2rem;
+            margin: auto;
+        }
+
+        .box6:hover{
+
+            font-family: "playball", sans-serif;
+            font-size: 2rem;
+            box-shadow: 5px 5px 5px 5px gray;
+            transition: 1s;
+        }
+
+        .box7{
+            border: 1px solid black;
+            width: 15%;
+            height: 10rem;
+            background-color: lightpink;
+            border-radius: 5px;
+            text-align: center;
+            padding: 1rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 2rem;
+            margin: auto;
+        }
+
+        .box7:hover{
+
+            font-family: "lobster", sans-serif;
+            font-size: 2rem;
+            box-shadow: 5px 5px 5px 5px gray;
+            transition: 1s;
+        }
+
+        .box8{
+            border: 1px solid black;
+            width: 15%;
+            height: 10rem;
+            background-color: lightcoral;
+            border-radius: 5px;
+            text-align: center;
+            padding: 1rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 2rem;
+            margin: auto;
+        }
+
+        .box8:hover{
+
+            font-family: "Rowdies", sans-serif;
+            font-size: 2rem;
+            box-shadow: 5px 5px 5px 5px gray;
+            transition: 1s;
+        }
+
+        .box9{
+            border: 1px solid black;
+            width: 15%;
+            height: 10rem;
+            background-color: lightyellow;
+            border-radius: 5px;
+            text-align: center;
+            padding: 1rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 2rem;
+            margin: auto;
+        }
+
+        .box9:hover{
+
+            font-family: "pacifico", sans-serif;
+            font-size: 2rem;
+            box-shadow: 5px 5px 5px 5px gray;
+            transition: 1s;
+        }
+
+        .box10{
+            border: 1px solid black;
+            width: 15%;
+            height: 10rem;
+            background-color: lightseagreen;
+            border-radius: 5px;
+            text-align: center;
+            padding: 1rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 2rem;
+            margin: auto;
+        }
+
+        .box10:hover{
+
+            font-family: "micro 5", sans-serif;
+            font-size: 2rem;
+            box-shadow: 5px 5px 5px 5px gray;
+            transition: 1s;
+        }
+
+        .box11{
+            border: 1px solid black;
+            width: 15%;
+            height: 10rem;
+            background-color: lightpink;
+            border-radius: 5px;
+            text-align: center;
+            padding: 1rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 2rem;
+            margin: auto;
+        }
+
+        .box11:hover{
+
+            font-family: "jacquard 12", sans-serif;
+            font-size: 2rem;
+            box-shadow: 5px 5px 5px 5px gray;
+            transition: 1s;
+        }
+
+        .box12{
+            border: 1px solid black;
+            width: 15%;
+            height: 10rem;
+            background-color:lightgreen;
+            border-radius: 5px;
+            text-align: center;
+            padding: 1rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 2rem;
+            margin: auto;
+        }
+
+        .box12:hover{
+
+            font-family: "shadows", sans-serif;
+            font-size: 2rem;
+            box-shadow: 5px 5px 5px 5px gray;
+            transition: 1s;
+        }
+
+
+        .box13{
+            border: 1px solid black;
+            width: 15%;
+            height: 10rem;
+            background-color: lightcoral;
+            border-radius: 5px;
+            text-align: center;
+            padding: 1rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 2rem;
+            margin: auto;
+        }
+
+        .box13:hover{
+
+            font-family: " Tiny 5", sans-serif;
+            font-size: 2rem;
+            box-shadow: 5px 5px 5px 5px gray;
+            transition: 1s;
+        }
+
+
+        .box14{
+            border: 1px solid black;
+            width: 15%;
+            height: 10rem;
+            background-color: lightgoldenrodyellow;
+            border-radius: 5px;
+            text-align: center;
+            padding: 1rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 2rem;
+            margin: auto;
+        }
+
+        .box14:hover{
+
+            font-family: "Permanant", sans-serif;
+            font-size: 2rem;
+            box-shadow: 5px 5px 5px 5px gray;
+            transition: 1s;
+        }
+
+        .box15{
+            border: 1px solid black;
+            width: 15%;
+            height: 10rem;
+            background-color: lightcyan;
+            border-radius: 5px;
+            text-align: center;
+            padding: 1rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 2rem;
+            margin: auto;
+        }
+
+        .box15:hover{
+
+            font-family: "Abril fatface", sans-serif;
+            font-size: 2rem;
+            box-shadow: 5px 5px 5px 5px gray;
+            transition: 1s;
+        }
+
+        .box16{
+            border: 1px solid black;
+            width: 15%;
+            height: 10rem;
+            background-color: lightpink;
+            border-radius: 5px;
+            text-align: center;
+            padding: 1rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 2rem;
+            margin: auto;
+        }
+
+        .box16:hover{
+
+            font-family: "DM Serif", sans-serif;
+            font-size: 2rem;
+            box-shadow: 5px 5px 5px 5px gray;
+            transition: 1s;
+        }
+
+
+        .box17{
+            border: 1px solid black;
+            width: 15%;
+            height: 10rem;
+            background-color: lightcoral;
+            border-radius: 5px;
+            text-align: center;
+            padding: 1rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 2rem;
+            margin: auto;
+        }
+
+        .box17:hover{
+
+            font-family: "playwrite", sans-serif;
+            font-size: 2rem;
+            box-shadow: 5px 5px 5px 5px gray;
+            transition: 1s;
+        }
+
+
+        .box18{
+            border: 1px solid black;
+            width: 15%;
+            height: 10rem;
+            background-color: lightblue;
+            border-radius: 5px;
+            text-align: center;
+            padding: 1rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 2rem;
+            margin: auto;
+        }
+
+        .box18:hover{
+
+            font-family: "Jersey", sans-serif;
+            font-size: 2rem;
+            box-shadow: 5px 5px 5px 5px gray;
+            transition: 1s;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="heading" >Box shadow and Font families</h1>
+
+        <div class="container" >
+
+            <div class="box1">
+                <p>Oswald</p>
+            </div>
+    
+            <div class="box2">
+                <p>kanit</p>
+            </div>
+    
+            <div class="box3">
+                <p>josefin slab</p>
+            </div>
+
+        </div>
+
+
+        <div class="container" >
+
+            <div class="box4">
+                <p>Danfo</p>
+            </div>
+    
+            <div class="box5">
+                <p>Great Vibes</p>
+            </div>
+    
+            <div class="box6">
+                <p>Play ball</p>
+            </div>
+
+        </div>
+
+        <div class="container" >
+
+            <div class="box7">
+                <p>Lobster</p>
+            </div>
+    
+            <div class="box8">
+                <p>Rowdies</p>
+            </div>
+    
+            <div class="box9">
+                <p>Pacifico</p>
+            </div>
+
+        </div>
+
+
+        <div class="container" >
+
+            <div class="box10">
+                <p>Micro5</p>
+            </div>
+    
+            <div class="box11">
+                <p>Jaccquard 12</p>
+            </div>
+    
+            <div class="box12">
+                <p>Shadows</p>
+            </div>
+
+        </div>
+
+
+        <div class="container" >
+
+            <div class="box13">
+                <p>Tiny5</p>
+            </div>
+    
+            <div class="box14">
+                <p>Permanent</p>
+            </div>
+    
+            <div class="box15">
+                <p>Abril Fatface</p>
+            </div>
+
+        </div>
+
+
+        <div class="container" >
+
+            <div class="box16">
+                <p>DM Serif</p>
+            </div>
+    
+            <div class="box17">
+                <p>Playwrite</p>
+            </div>
+    
+            <div class="box18">
+                <p>jersey</p>
+            </div>
+
+        </div>
+        
+    </div>
+</body>
+</html>
+
+
